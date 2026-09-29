@@ -1,6 +1,14 @@
-xai-sdk
+fastapi
+uvicorn
+pydantic
 python-dotenv
 langgraph
 langchain
-fastapi
-uvicorn
+langchain-core
+langchain-groq
+langchain-huggingface
+langchain-chroma
+chromadb
+sentence-transformers
+google-api-python-client
+groq
