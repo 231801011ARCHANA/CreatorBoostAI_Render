@@ -1,0 +1,7 @@
+{
+    "evaluation_queries": 15,
+    "average_precision_at_3": 0.3333,
+    "average_recall_at_3": 1.0,
+    "average_mrr": 0.8222,
+    "average_ndcg_at_3": 0.8682
+}

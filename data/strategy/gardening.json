@@ -1,0 +1,42 @@
+{
+    "creator_insights": [
+        "No creator videos are available, so insights are based solely on the broader niche sample.",
+        "High‑performing niche videos frequently feature specific fruit or vegetable focus, use emojis, and include multiple hashtags.",
+        "Short‑form videos (#shorts) that showcase quick tips or harvest moments appear to attract large view counts."
+    ],
+    "content_patterns": [
+        "Titles combine an emoji, a clear action phrase (e.g., \"Grow\", \"Tips\", \"Trick\"), and several relevant hashtags.",
+        "Content often centers on a single plant or a concise gardening task (pruning, harvesting, seed germination).",
+        "Both long‑form tutorials and very short showcase clips are present, indicating audience appetite for varied lengths."
+    ],
+    "recommended_topics": [
+        "Seed starting and indoor seedling care",
+        "Container gardening for small spaces",
+        "Natural pest management DIY solutions",
+        "Composting and soil enrichment basics",
+        "Low‑light houseplants and indoor lighting"
+    ],
+    "video_ideas": [
+        {
+            "title": "🌱 Starting Seeds Indoors: Step‑by‑Step Guide for Beginners #seedstarting #indoorgardening",
+            "reason": "Beginners often search for clear seed‑starting instructions; the niche sample shows strong interest in plant‑specific tutorials, so a general seed‑starting guide fills a gap while matching the emoji‑hashtag title style."
+        },
+        {
+            "title": "🪴 Perfect Container Garden for Small Spaces: Soil, Drainage & Plant Picks #container #smallspace",
+            "reason": "Container gardening is a common beginner topic in the RAG knowledge and is not directly covered in the sampled high‑performing videos, offering fresh, evergreen content that aligns with the observed tutorial format."
+        },
+        {
+            "title": "🐛 Natural Pest Control: DIY Remedies Every Gardener Should Know #pestmanagement #organic",
+            "reason": "Pest management appears in the RAG knowledge as a key beginner issue; providing DIY solutions adds practical value and follows the niche pattern of “tips” videos."
+        }
+    ],
+    "content_direction": "Focus on beginner‑friendly, evergreen topics such as seed starting, container gardening, pest control, composting, and low‑light indoor plants. Use the proven title structure (emoji + clear action phrase + multiple hashtags) and mix short‑form (under 60 seconds) quick‑tip videos with longer step‑by‑step tutorials. Consistently publish content that addresses common beginner mistakes and practical how‑to guides to build a loyal audience while differentiating from the fruit‑specific, harvest‑centric videos that dominate the current high‑view sample.",
+    "novelty_metrics": {
+        "candidate_ideas": 6,
+        "accepted_ideas": 6,
+        "rejected_ideas": 0,
+        "novelty_rate": 100.0,
+        "creator_videos_checked": 0,
+        "niche_videos_checked": 10
+    }
+}

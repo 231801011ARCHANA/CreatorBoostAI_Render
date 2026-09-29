@@ -1,0 +1,6 @@
+xai-sdk
+python-dotenv
+langgraph
+langchain
+fastapi
+uvicorn

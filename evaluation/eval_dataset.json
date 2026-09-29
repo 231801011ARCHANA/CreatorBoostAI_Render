@@ -1,0 +1,139 @@
+[
+    {
+        "id": "fitness_001",
+        "niche": "fitness",
+        "query": "What should beginners know about starting fitness?",
+        "relevant_documents": ["fitness_001"],
+        "graded_relevance": {
+            "fitness_001": 3
+        }
+    },
+    {
+        "id": "fitness_002",
+        "niche": "fitness",
+        "query": "What are common beginner fitness mistakes?",
+        "relevant_documents": ["fitness_003"],
+        "graded_relevance": {
+            "fitness_003": 3
+        }
+    },
+    {
+        "id": "fitness_003",
+        "niche": "fitness",
+        "query": "What are useful home workout ideas?",
+        "relevant_documents": ["fitness_002"],
+        "graded_relevance": {
+            "fitness_002": 3
+        }
+    },
+    {
+        "id": "fitness_004",
+        "niche": "fitness",
+        "query": "What should beginners know about fitness nutrition?",
+        "relevant_documents": ["fitness_004"],
+        "graded_relevance": {
+            "fitness_004": 3
+        }
+    },
+    {
+        "id": "fitness_005",
+        "niche": "fitness",
+        "query": "What is important for workout recovery?",
+        "relevant_documents": ["fitness_005"],
+        "graded_relevance": {
+            "fitness_005": 3
+        }
+    },
+
+    {
+        "id": "gardening_001",
+        "niche": "gardening",
+        "query": "What should beginners know before starting a garden?",
+        "relevant_documents": ["gardening_001"],
+        "graded_relevance": {
+            "gardening_001": 3
+        }
+    },
+    {
+        "id": "gardening_002",
+        "niche": "gardening",
+        "query": "What are common beginner gardening mistakes?",
+        "relevant_documents": ["gardening_002"],
+        "graded_relevance": {
+            "gardening_002": 3
+        }
+    },
+    {
+        "id": "gardening_003",
+        "niche": "gardening",
+        "query": "How should beginners water plants?",
+        "relevant_documents": ["gardening_005"],
+        "graded_relevance": {
+            "gardening_005": 3
+        }
+    },
+    {
+        "id": "gardening_004",
+        "niche": "gardening",
+        "query": "What should beginners know about garden soil?",
+        "relevant_documents": ["gardening_004"],
+        "graded_relevance": {
+            "gardening_004": 3
+        }
+    },
+    {
+        "id": "gardening_005",
+        "niche": "gardening",
+        "query": "How should beginners care for plants?",
+        "relevant_documents": ["gardening_003"],
+        "graded_relevance": {
+            "gardening_003": 3
+        }
+    },
+
+    {
+        "id": "cooking_001",
+        "niche": "cooking",
+        "query": "What should beginners learn first in cooking?",
+        "relevant_documents": ["cooking_001"],
+        "graded_relevance": {
+            "cooking_001": 3
+        }
+    },
+    {
+        "id": "cooking_002",
+        "niche": "cooking",
+        "query": "What are basic kitchen tools and food safety topics?",
+        "relevant_documents": ["cooking_002"],
+        "graded_relevance": {
+            "cooking_002": 3
+        }
+    },
+    {
+        "id": "cooking_003",
+        "niche": "cooking",
+        "query": "How can beginners plan meals?",
+        "relevant_documents": ["cooking_003"],
+        "graded_relevance": {
+            "cooking_003": 3
+        }
+    },
+    {
+        "id": "cooking_004",
+        "niche": "cooking",
+        "query": "What are common cooking mistakes?",
+        "relevant_documents": ["cooking_004"],
+        "graded_relevance": {
+            "cooking_004": 3
+        }
+    },
+    {
+        "id": "cooking_005",
+        "niche": "cooking",
+        "query": "What cooking techniques should beginners learn?",
+        "relevant_documents": ["cooking_005"],
+        "graded_relevance": {
+            "cooking_005": 3
+        }
+    }
+]

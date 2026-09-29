@@ -1,0 +1,42 @@
+{
+    "creator_insights": [
+        "The channel currently has no published videos, so there are no existing performance metrics to compare against niche benchmarks.",
+        "Without prior content, the creator can define clear content pillars from the start, aligning with proven successful formats in the fitness niche.",
+        "Early videos should focus on beginner-friendly, high‑search‑interest topics such as home workouts, proper form tutorials, and mobility routines to attract a broad audience."
+    ],
+    "content_patterns": [
+        "Successful niche videos often highlight a specific workout modality (e.g., walking, Zumba, powerlifting) and use concise, action‑oriented titles.",
+        "Titles frequently include uppercase words, speed‑related adjectives (e.g., FAST, QUICK), and occasional hashtags (#fitness, #gym).",
+        "Videos that combine entertainment (e.g., role‑play) with instructional content tend to achieve very high view counts."
+    ],
+    "recommended_topics": [
+        "Beginner home cardio and walking routines",
+        "Introductory Zumba/aerobic dance workouts",
+        "Fundamentals of powerlifting and strength training for novices",
+        "Common gym form mistakes and corrective cues",
+        "Mobility and flexibility sequences for injury prevention"
+    ],
+    "video_ideas": [
+        {
+            "title": "Full‑Body Home Workout with No Equipment – Beginner Friendly",
+            "reason": "Matches the niche trend of clear, specific workout formats (e.g., walking, Zumba) and aligns with RAG guidance on beginner full‑body routines."
+        },
+        {
+            "title": "How to Master Proper Squat Form – Common Mistakes Explained",
+            "reason": "Addresses the RAG‑identified need for tutorials on correct form and taps into the observed popularity of instructional content like powerlifter videos."
+        },
+        {
+            "title": "Dynamic Warm‑Up Routine to Prevent Injuries Before Any Workout",
+            "reason": "Fits the pattern of providing practical, safety‑focused content, a gap not directly covered by the sampled high‑performing videos."
+        }
+    ],
+    "content_direction": "Start by establishing a core library of beginner‑focused, equipment‑light workout tutorials that cover cardio, strength, mobility, and mindset. Use clear, action‑oriented titles with occasional uppercase emphasis and relevant hashtags to mirror successful niche patterns. Gradually introduce more specialized series (e.g., powerlifting fundamentals, Zumba dance) as the audience grows, ensuring each video offers practical, step‑by‑step guidance consistent with the creator’s new‑channel status and the broader fitness audience’s interests.",
+    "novelty_metrics": {
+        "candidate_ideas": 6,
+        "accepted_ideas": 6,
+        "rejected_ideas": 0,
+        "novelty_rate": 100.0,
+        "creator_videos_checked": 0,
+        "niche_videos_checked": 10
+    }
+}

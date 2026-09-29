@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>CreatorBoostAI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+
+    <!-- =========================================================
+         DASHBOARD
+         ========================================================= -->
+
+    <div id="dashboard-page" class="dashboard-page">
+
+        <!-- =====================================================
+             TOP BAR
+             ===================================================== -->
+
+        <header class="topbar">
+
+            <div class="brand-area">
+
+                <div class="brand-icon">
+                    ✦
+                </div>
+
+                <div>
+                    <div class="brand-name">
+                        CreatorBoostAI
+                    </div>
+
+                    <div class="brand-subtitle">
+                        AI Content Strategy Assistant
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="topbar-right">
+
+                <div class="ai-status">
+                    <span class="status-dot"></span>
+                    AI Ready
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =====================================================
+             MAIN CONTENT
+             ===================================================== -->
+
+        <main class="main-container">
+
+
+            <!-- =================================================
+                 HERO SECTION
+                 ================================================= -->
+
+            <section class="hero-section">
+
+                <div class="hero-badge">
+                    ✨ Powered by Multi-Agent AI
+                </div>
+
+                <h1>
+                    Turn your niche into
+                    <span>content that grows.</span>
+                </h1>
+
+                <p>
+                    CreatorBoostAI researches YouTube content,
+                    retrieves useful niche knowledge, and creates
+                    a personalized content strategy for you.
+                </p>
+
+            </section>
+
+
+            <!-- =================================================
+                 STEP 01
+                 ================================================= -->
+
+            <section class="section-card">
+
+                <div class="section-header">
+
+                    <div class="step-label">
+                        STEP 01
+                    </div>
+
+                    <h2>
+                        Choose your niche
+                    </h2>
+
+                    <p>
+                        Tell CreatorBoostAI what type of content
+                        you want to create.
+                    </p>
+
+                </div>
+
+
+                <!-- Niche Cards -->
+
+                <div class="niche-grid">
+
+                    <!-- Gardening -->
+
+                    <button
+                        class="niche-card"
+                        data-niche="Gardening"
+                        onclick="selectNiche('Gardening')"
+                    >
+
+                        <div class="niche-icon">
+                            🌱
+                        </div>
+
+                        <div class="niche-name">
+                            Gardening
+                        </div>
+
+                        <div class="niche-description">
+                            Plants, gardening tips &amp; home growing
+                        </div>
+
+                    </button>
+
+
+                    <!-- Fitness -->
+
+                    <button
+                        class="niche-card"
+                        data-niche="Fitness"
+                        onclick="selectNiche('Fitness')"
+                    >
+
+                        <div class="niche-icon">
+                            💪
+                        </div>
+
+                        <div class="niche-name">
+                            Fitness
+                        </div>
+
+                        <div class="niche-description">
+                            Workouts, health &amp; fitness content
+                        </div>
+
+                    </button>
+
+
+                    <!-- Cooking -->
+
+                    <button
+                        class="niche-card"
+                        data-niche="Cooking"
+                        onclick="selectNiche('Cooking')"
+                    >
+
+                        <div class="niche-icon">
+                            🍳
+                        </div>
+
+                        <div class="niche-name">
+                            Cooking
+                        </div>
+
+                        <div class="niche-description">
+                            Recipes, cooking tips &amp; food content
+                        </div>
+
+                    </button>
+
+                </div>
+
+
+                <!-- Selected Niche -->
+
+                <div
+                    id="selected-niche"
+                    class="selected-niche"
+                >
+                    Selected niche:
+                    <strong>None</strong>
+                </div>
+
+
+                <!-- =================================================
+                     YOUTUBE CHANNEL URL
+                     ================================================= -->
+
+                <div class="channel-input-section">
+
+                    <label for="channel-url">
+
+                        YOUR YOUTUBE CHANNEL
+
+                        <span>
+                            (optional)
+                        </span>
+
+                    </label>
+
+
+                    <input
+                        type="url"
+                        id="channel-url"
+                        placeholder="https://youtube.com/@yourchannel"
+                    >
+
+
+                    <p>
+                        Add your channel to let CreatorBoostAI
+                        analyze your existing public videos.
+                    </p>
+
+                </div>
+
+
+                <!-- Generate Button -->
+
+                <div class="generate-area">
+
+                    <button
+                        id="generate-btn"
+                        class="generate-button"
+                        onclick="generateStrategy()"
+                        disabled
+                    >
+
+                        <span>
+                            ✨
+                        </span>
+
+                        Generate Strategy
+
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                STEP 02 — AI WORKFLOW
+                ================================================= -->
+
+            <section class="section-card workflow-section">
+
+                <div class="section-header">
+
+                    <div class="step-label">
+                        STEP 02
+                    </div>
+
+                    <h2>
+                        AI Research Workflow
+                    </h2>
+
+                    <p>
+                        Four specialized AI agents work together
+                        to build your strategy.
+                    </p>
+
+                </div>
+
+
+                <div class="workflow-container">
+
+                    <!-- Agent 1: Planner -->
+
+                    <div id="agent-planner" class="agent-card">
+
+                        <div class="agent-number">01</div>
+
+                        <div class="agent-icon">🧭</div>
+
+                        <h3>Planner Agent</h3>
+
+                        <p>
+                            Understands your request and decides
+                            which research and strategy steps are required.
+                        </p>
+
+                        <div class="agent-status waiting">
+                            Waiting
+                        </div>
+
+                    </div>
+
+
+                    <div class="workflow-arrow">→</div>
+
+
+                    <!-- Agent 2: YouTube -->
+
+                    <div id="agent-youtube" class="agent-card">
+
+                        <div class="agent-number">02</div>
+
+                        <div class="agent-icon">▶</div>
+
+                        <h3>YouTube Research Agent</h3>
+
+                        <p>
+                            Researches successful content and analyzes
+                            public YouTube performance data.
+                        </p>
+
+                        <div class="agent-status waiting">
+                            Waiting
+                        </div>
+
+                    </div>
+
+
+                    <div class="workflow-arrow">→</div>
+
+
+                    <!-- Agent 3: RAG -->
+
+                    <div id="agent-rag" class="agent-card">
+
+                        <div class="agent-number">03</div>
+
+                        <div class="agent-icon">🧠</div>
+
+                        <h3>RAG Retrieval Agent</h3>
+
+                        <p>
+                            Retrieves relevant niche knowledge from
+                            the CreatorBoostAI knowledge base.
+                        </p>
+
+                        <div class="agent-status waiting">
+                            Waiting
+                        </div>
+
+                    </div>
+
+
+                    <div class="workflow-arrow">→</div>
+
+
+                    <!-- Agent 4: Strategy -->
+
+                    <div id="agent-strategy" class="agent-card">
+
+                        <div class="agent-number">04</div>
+
+                        <div class="agent-icon">✨</div>
+
+                        <h3>Content Strategy Agent</h3>
+
+                        <p>
+                            Combines research and knowledge to generate
+                            your personalized content strategy.
+                        </p>
+
+                        <div class="agent-status waiting">
+                            Waiting
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 LOADING SECTION
+                 ================================================= -->
+
+            <section
+                id="loading-section"
+                class="loading-section hidden"
+            >
+
+                <div class="loading-spinner"></div>
+
+                <h2>
+                    Creating your strategy...
+                </h2>
+
+                <p>
+                    Our AI agents are researching your niche.
+                </p>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 STEP 03 — RESULTS
+                 ================================================= -->
+
+            <section
+                id="results-section"
+                class="section-card results-section hidden"
+            >
+
+                <div class="section-header">
+
+                    <div class="step-label">
+                        STEP 03
+                    </div>
+
+                    <h2>
+                        Your Content Strategy
+                    </h2>
+
+                    <p>
+                        Here is what CreatorBoostAI discovered
+                        for your niche.
+                    </p>
+
+                </div>
+
+
+                <!-- Research Summary -->
+
+                <div
+                    id="research-results"
+                    class="results-block"
+                >
+
+                    <h3>
+                        📊 YouTube Research
+                    </h3>
+
+                    <div
+                        id="youtube-analysis"
+                        class="analysis-grid"
+                    >
+                    </div>
+
+                </div>
+
+
+                <!-- Content Patterns -->
+
+                <div
+                    id="content-patterns"
+                    class="results-block"
+                >
+
+                    <h3>
+                        🔍 Content Patterns
+                    </h3>
+
+                    <div
+                        id="patterns-list"
+                        class="result-list"
+                    >
+                    </div>
+
+                </div>
+
+
+                <!-- Recommended Topics -->
+
+                <div
+                    id="recommended-topics"
+                    class="results-block"
+                >
+
+                    <h3>
+                        💡 Recommended Topics
+                    </h3>
+
+                    <div
+                        id="topics-list"
+                        class="result-list"
+                    >
+                    </div>
+
+                </div>
+
+
+                <!-- RAG KNOWLEDGE -->
+
+                <div
+                    id="rag-knowledge"
+                    class="results-block"
+                >
+
+                    <h3>
+                        🧠 Knowledge Used
+                    </h3>
+
+                    <div
+                        id="rag-list"
+                        class="result-list"
+                    >
+                    </div>
+
+                </div>
+
+
+                <!-- Video Ideas -->
+
+                <div
+                    id="video-ideas"
+                    class="results-block"
+                >
+
+                    <h3>
+                        🎬 Video Ideas
+                    </h3>
+
+                    <div
+                        id="ideas-list"
+                        class="ideas-grid"
+                    >
+                    </div>
+
+                </div>
+
+
+                <!-- Content Direction -->
+
+                <div
+                    id="content-direction"
+                    class="strategy-direction"
+                >
+
+                    <h3>
+                        🚀 Content Direction
+                    </h3>
+
+                    <p id="direction-text">
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 YOUTUBE RESEARCH DETAILS
+                 ================================================= -->
+
+            <section
+                id="youtube-videos-section"
+                class="section-card youtube-videos-section hidden"
+            >
+
+                <div class="section-header">
+
+                    <h2>
+                        Top YouTube Videos
+                    </h2>
+
+                    <p>
+                        Videos discovered by the YouTube
+                        Research Agent.
+                    </p>
+
+                </div>
+
+
+                <div
+                    id="youtube-videos"
+                    class="youtube-video-list"
+                >
+                </div>
+
+            </section>
+
+            <section id="creator-videos-section" class="section-card creator-videos-section hidden">
+
+                <div class="section-header">
+                    <div class="step-label">YOUR CHANNEL</div>
+                    <h2>📺 Your YouTube Performance</h2>
+                    <p>Public videos analyzed from your YouTube channel.</p>
+                </div>
+
+                <div id="creator-analysis" class="analysis-grid"></div>
+
+                <div class="creator-videos-heading">
+                    <h3>🎬 Your Top Videos</h3>
+                </div>
+
+                <div id="creator-videos" class="youtube-video-list"></div>
+
+            </section>
+
+
+
+        </main>
+
+
+
+        <!-- =====================================================
+             FOOTER
+             ===================================================== -->
+
+        <footer class="footer">
+
+            <div>
+                © 2026 CreatorBoostAI
+            </div>
+
+            <div>
+                Powered by
+                <strong>LangGraph</strong>
+                +
+                <strong>AI Agents</strong>
+            </div>
+
+        </footer>
+
+    </div>
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+         ========================================================= -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
