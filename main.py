@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import time
@@ -188,3 +189,16 @@ def generate_strategy(data: StrategyRequest):
 def evaluate_system():
 
     return evaluate_all_niches()
+
+# --------------------------------------------------
+# SERVE FRONTEND
+# --------------------------------------------------
+
+app.mount(
+    "/",
+    StaticFiles(
+        directory="frontend",
+        html=True
+    ),
+    name="frontend"
+)
